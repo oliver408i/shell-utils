@@ -1,0 +1,29 @@
+{
+    "_sht-interation": "1",
+    "alias": {
+        "setgpgtty": {
+            "description": "Sets the GPG_TTY environment variable to current terminal",
+            "command": "export GPG_TTY=$(tty)",
+            "category": "gpg",
+            "os": ["all linux", "all macos"]
+        },
+        "gpgsigntest": {
+            "description": "GPG signs 'test' message",
+            "command": "echo test | gpg --clearsign",
+            "category": "gpg",
+            "os": ["all linux", "all macos"]
+        },
+        "yt-dpl mp3": {
+            "description": "Download mp3 from YouTube video. Requires yt-dlp",
+            "command": "yt-dlp --extract-audio --audio-format mp3",
+            "category": "media",
+            "os": ["all linux", "all macos"]
+        },
+        "opencwd": {
+            "description": "Open current working directory",
+            "command": "[ -d . ] && open .",
+            "category": "qol",
+            "os": ["all linux", "all macos"]
+        }
+    }
+}
